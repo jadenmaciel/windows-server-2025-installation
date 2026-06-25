@@ -30,7 +30,7 @@ Key objectives:
 | Memory Allocation | 4 GB RAM per VM |
 | CPU Allocation | 2 vCPUs per VM |
 | Storage Allocation | 80 GB dynamic VDI |
-| Credentials | `administrator / !QAZ1qaz!QAZ1qaz` ; `jmaciel / #EDC3edc#EDC3edc` |
+| Credentials | `administrator / <redacted-admin-password>` ; `labuser / <redacted-user-password>` |
 
 ---
 
@@ -44,7 +44,7 @@ Key objectives:
 
 4. Configured administrator account and signed in successfully.  
 
-5. Created local user `jmaciel` with standardized passphrase.  
+5. Created local user `labuser` with standardized passphrase.  
 
 6. Installed VirtualBox Guest Additions via Devices menu → rebooted successfully.  
 
@@ -54,7 +54,7 @@ Key objectives:
 
 9. Executed `D:` → `VBoxWindowsAdditions.exe` within Core console to install Guest Additions.  
 
-10. Ran `sconfig` to create user `jmaciel` and verified account listing.  
+10. Ran `sconfig` to create user `labuser` and verified account listing.  
 
 11. Took snapshots named "Initial Install with Tools" for both VMs.  
 
@@ -104,7 +104,7 @@ Key objectives:
 
 ### Evidence 03 — User Accounts Panel
 
-* *What would be visible:* Control Panel → User Accounts listing `Administrator` and `jmaciel`.
+* *What would be visible:* Control Panel → User Accounts listing `Administrator` and `labuser`.
 
 * *Text excerpt:*
 
@@ -112,7 +112,7 @@ Key objectives:
 
   Administrator (Local Account)
 
-  jmaciel (Local Account)
+  labuser (Local Account)
 
   ```
 
@@ -176,7 +176,7 @@ Key objectives:
 
   ```text
 
-  Enter username: jmaciel
+  Enter username: labuser
 
   The command completed successfully.
 
@@ -190,7 +190,7 @@ Key objectives:
 
 * Both VMs boot to expected interfaces (GUI and CLI).
 
-* `administrator` and `jmaciel` accounts authenticated successfully.
+* `administrator` and `labuser` accounts authenticated successfully.
 
 * Guest Additions enabled shared clipboard and display resizing.
 
@@ -204,7 +204,7 @@ Key objectives:
 
 * **2025-09-07** — Windows Server 2025 Desktop installation completed
 
-* **2025-09-07** — Local user `jmaciel` created and verified
+* **2025-09-07** — Local user `labuser` created and verified
 
 * **2025-09-07** — Guest Additions installed on Desktop and Core VMs
 
@@ -240,7 +240,7 @@ Key objectives:
 
 ## Author / Ownership
 
-This project was performed hands-on by **Jaden Maciel-Shapiro** on **2025-09-07**.
+This project was performed hands-on by **Lab User** on **2025-09-07**.
 
 It covers the installation and initial configuration of both Windows Server 2025 Desktop and Core editions in VirtualBox 7.0.20, with verified evidence of user creation, Guest Additions integration, and snapshot management.
 
